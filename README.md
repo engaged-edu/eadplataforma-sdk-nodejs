@@ -5,7 +5,7 @@
 Using npm:
 
 ```bash
-npm install eadplataforma-sdk-nodejs
+npm install @engaged/eadplataforma-sdk-nodejs
 ```
 
 ## Configuration
@@ -26,7 +26,7 @@ The SDK settings can be loaded in two ways:
 ### SDK params
 
 ```javascript
-const { EADPlataformaSDK } = require('eadplataforma-sdk-nodejs');
+const { EADPlataformaSDK } = require('@engaged/eadplataforma-sdk-nodejs');
 
 const sdk = new EADPlataformaSDK({
     // required
@@ -54,7 +54,7 @@ const sdk = new EADPlataformaSDK({
 Enrolling a new student
 
 ```javascript
-const { EADPlataformaSDK, Types } = require('eadplataforma-sdk-nodejs');
+const { EADPlataformaSDK, Types } = require('@engaged/eadplataforma-sdk-nodejs');
 
 const sdk = new EADPlataformaSDK({
     apiKey: 'my-api-key',
