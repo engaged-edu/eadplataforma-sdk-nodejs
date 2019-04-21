@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/engaged-edu/eadplataforma-sdk-nodejs#readme",
   "devDependencies": {
+    "dotenv": "7.0.0",
     "eslint": "5.16.0",
     "eslint-config-prettier": "4.1.0",
     "eslint-plugin-mocha": "5.3.0",
@@ -35,7 +36,6 @@
   "dependencies": {
     "axios": "0.18.0",
     "debug": "4.1.1",
-    "form-data": "2.3.3",
     "joi": "14.3.1",
     "lodash": "4.17.11"
   }
