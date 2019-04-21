@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.4 / 2019-04-21
+
+* fix: .git removed from npm package
+
 ## 1.0.3 / 2019-04-21
 
 * fix: sdk function enrollUserAtCourse
