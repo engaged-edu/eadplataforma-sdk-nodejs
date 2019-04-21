@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 1.1.0 / 2019-04-21
+
+* feature: mocha sdk client api test
+* fix: request content type and encoding
+
 ## 1.0.4 / 2019-04-21
 
 * fix: .git removed from npm package
