@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.0.0 / 2019-04-23
+
+### Breaking change
+
+* breaking-change: subdomain configuration removed
+
 ## 1.1.0 / 2019-04-21
 
 * feature: mocha sdk client api test
