@@ -14,14 +14,13 @@ The SDK settings can be loaded in two ways:
 
 ### Environment variables
 
-| Variable                          | Default value       |
-| --------------------------------- | ------------------- |
-| `EADPLATAFORMA_SDK_API_KEY`       |
-| `EADPLATAFORMA_SDK_API_SUBDOMAIN` |
-| `EADPLATAFORMA_SDK_API_PROTOCOL`  | `https`             |
-| `EADPLATAFORMA_SDK_API_TIMEOUT`   | `5000`              |
-| `EADPLATAFORMA_SDK_API_DOMAIN`    | `eadplataforma.com` |
-| `EADPLATAFORMA_SDK_API_PATH`      | `api/1`             |
+| Variable                         | Default value |
+| -------------------------------- | ------------- |
+| `EADPLATAFORMA_SDK_API_KEY`      |
+| `EADPLATAFORMA_SDK_API_DOMAIN`   |               |
+| `EADPLATAFORMA_SDK_API_PROTOCOL` | `https`       |
+| `EADPLATAFORMA_SDK_API_TIMEOUT`  | `5000`        |
+| `EADPLATAFORMA_SDK_API_PATH`     | `api/1`       |
 
 ### SDK params
 
@@ -33,16 +32,13 @@ const sdk = new EADPlataformaSDK({
     apiKey: 'my-api-key',
 
     // required
-    apiSubdomain: 'my-account-subdomain',
+    apiDomain: 'myaccount.eadplataforma.com',
 
     // default
     apiProtocol: 'https',
 
     // default
     apiTimeout: 5000,
-
-    // default
-    apiDomain: 'eadplataforma.com',
 
     // default
     apiPath: 'api/v1',
@@ -58,7 +54,7 @@ const { EADPlataformaSDK, Types } = require('@engaged/eadplataforma-sdk-nodejs')
 
 const sdk = new EADPlataformaSDK({
     apiKey: 'my-api-key',
-    apiSubdomain: 'my-account-subdomain',
+    apiDomain: 'myaccount.eadplataforma.com',
 });
 
 const student = await sdk.createUser({
