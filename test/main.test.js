@@ -35,10 +35,6 @@ describe('EAD Plataforma SDK', () => {
                     envKey: 'EADPLATAFORMA_SDK_API_KEY',
                     envValue: '123456789',
                 },
-                apiSubdomain: {
-                    envKey: 'EADPLATAFORMA_SDK_API_SUBDOMAIN',
-                    envValue: 'myaccount',
-                },
             };
 
             _.forIn(config, ({ envKey, envValue } = {}) => (process.env[envKey] = envValue));
@@ -57,7 +53,6 @@ describe('EAD Plataforma SDK', () => {
                 apiDomain: 'eadplataforma-test-2.com',
                 apiPath: 'api-test-2',
                 apiKey: '000000000',
-                apiSubdomain: 'youraccount',
             };
             const sdk = new EADPlataformaSDK(config);
             const valid = _.every(sdk._config, (value, key) => value === config[key]);
@@ -76,10 +71,9 @@ describe('EAD Plataforma SDK', () => {
             this.sdk = new EADPlataformaSDK({
                 apiProtocol: 'https',
                 apiTimeout: 5000,
-                apiDomain: 'eadplataforma.com',
+                apiDomain: parsed.EADPLATAFORMA_SDK_API_DOMAIN,
                 apiPath: 'api/1',
                 apiKey: parsed.EADPLATAFORMA_SDK_API_KEY,
-                apiSubdomain: parsed.EADPLATAFORMA_SDK_API_SUBDOMAIN,
             });
         });
         it('Should create user (student) over API', async () => {
